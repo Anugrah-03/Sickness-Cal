@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #232a34;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 50px;
+
+        }
+
+        .reg {
+
+            width: 480px;
+            background-color: rgba(252, 109, 109, 1);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+            opacity: 1;
+
+
+        }
+
+        .main {
+            height: 580px;
+            background-color: hwb(0 43% 1%);
+            width: 480px;
+            margin: auto;
+            border-radius: 0px 0px 15px 15px;
+
+
+
+        }
+
+        label {
+            color: #FFFFFF;
+            margin-top: 15px;
+            margin-bottom: 2px;
+            margin-left: 40px;
+            width: 280px;
+            clear: left;
+
+            padding-right: 10px;
+        }
+
+        input[type='text'] {
+            border-radius: 7px;
+            border-color: #FFFFFF;
+            width: 400px;
+            margin-left: 30px;
+            box-shadow: 4px 4px black;
+            padding: 2px;
+            opacity: 0.5;
+
+
+
+        }
+
+        .submit {
+            width: 100px;
+            height: 30px;
+            background-color: #232a34;
+            position: relative;
+            right: 140px;
+            top: 350px;
+            border-radius: 12px;
+
+            font-weight: bold;
+            color: white;
+            border: #232a34;
+        }
+
+        h2 {
+            left: 175px;
+            top: 300px;
+        }
+
+        input[type='text'],
+        label {
+            float: left;
+            position: relative;
+            top: 20px;
+        }
+
+        .submit:hover {
+            color: hwb(0 43% 1%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reg">
+        <h1>Alzheimer Prediction</h1>
+    </div>
+    <div class="main">
+        <form action="{{url_for('pred')}}" method="post">
+            <label class="n">Gender:</label>
+            <input class="na" name='a' type="text"><br>
+            <label class="n">Age :</label>
+            <input class="na" name='b' type="text"><br>
+            <label class="n">Years of Education :</label>
+            <input class="na" name='c' type="text"><br>
+            <label class="n">Socio Economic Status(between 1-4) :</label>
+            <input class="na" name='d' type="text"><br>
+            <label class="n">Mini Mental State Examination :</label>
+            <input class="na" name='e' type="text"><br>
+            <label class="n">Clinical Dementia Rating:</label>
+            <input class="na" name='f' type="text"><br>
+            <label class="n">Estimated Total Intracranial Volume:</label>
+            <input class="na" name='g' type="text"><br>
+            <label class="n">Normalize Whole Brain Volume :</label>
+            <input class="na" name='h' type="text"><br>
+            <input type="Submit" class="submit">
+        </form>
+
+
+    </div>
+    </div>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body{
+    background-color: #232a34;
+}
+li{
+    margin:135px 60px 50px 50px;
+    list-style-type: none;  
+    text-align-last: center;
+    padding-top: 10px;
+    color:  #FC6D6D;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-radius:  15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px 5px #FC6D6D;
+    letter-spacing: 3px;
+    position: relative;
+    border:1px solid  #FC6D6D;
+}
+li:hover{
+   color: white;
+   bottom:30px;
+   box-shadow: 2px 2px 5px 5px white;
+   border:1px solid  white;
+}
+#Alzehimer {
+        float:left; 
+        width:25%;
+        height:280px;
+        background-image: url("static\\Alzehimer.png");
+        background-repeat:no-repeat;
+        background-size: 50%;
+        background-position: 50% 45%  ;
+        
+    }
+ 
+    body, html { 
+overflow-x: hidden; 
+overflow-y: auto;
+}
+    #Diabetes{
+        float:left; 
+        width:25%;
+        height:280px;
+        background-image: url("static\\diabetes.png");
+        background-repeat:no-repeat;
+        background-size: 50%;
+        background-position: 50% 45%   ;
+    }
+    #Heart{
+        float:left;
+        width:25%;
+        height:280px;
+        background-image: url("static\\heart.png");
+        background-repeat:no-repeat;
+        background-size: 50%;
+        background-position: 50% 45%  ;
+    }
+h1{
+position: relative;
+left: 100px;
+top:30px;
+color:#FC6D6D;
+letter-spacing: 4px;
+}

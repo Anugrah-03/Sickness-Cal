@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:  #232a34;
+  }
+  .wrapper{
+    display: flex;
+    position: relative;
+    left: -90px;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #232a34;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+  .header{
+   height:90vh;
+   position: relative;
+  left: 50px;
+  
+  }
+  .header ul{
+      list-style-type: none;
+  }
+  .header ul li{
+      float: left;
+      margin: 10px 10px 10px 10px;
+      padding:20px 20px 20px 20px;
+      cursor: pointer;
+  }
+  .about:hover{
+      color:black;
+  }
+  .about{
+      display: inline-block;
+      margin: 2px 2px 2px 2px;
+      padding: 2px 2px 2px 2px;
+      text-align: center;
+      width: 100px;
+      background-color: #FC6D6D;
+       border-radius: 5px ;
+     text-decoration: none;
+     color: white;
+     position: relative;
+     left: 150vh;
+     bottom:25vh;
+     font-weight: 600;
+  }
+  .button{
+      background-color: #FC6D6D;
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      align-self: center;
+      position: relative;
+      top:12vh;
+      right:40vh;
+      padding: 10px 0px 2px 22px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+  
+  }
+  .button:hover{
+      color:black;
+  }
+  #titlelogo{
+    position: relative;
+    bottom: 80px;
+    left: 150px;
+    color: #FC6D6D;
+    font-size: 40px;
+  }

@@ -1,0 +1,53 @@
+#results{
+    height:300px;
+    width: 550px;
+font-family: sans-serif;
+position: relative;
+left: 33%;
+color: #FFFFFF;
+border: 2px solid #232a34;
+border-radius: 50px ;
+background-color:  hwb(0 43% 1%);
+}
+#resultText{
+position: relative;
+top:10px;
+left:34%;
+font-size: 50px;  
+}
+#predText{
+position: relative;
+color:  #232a34;
+top:80px;  
+font-size: 25px; 
+right: 28px; 
+}
+body{
+background-color:#232a34 ;
+font-family: sans-serif;
+margin-top: 12%;
+}
+#goback{
+border: 2px solid #232a34;
+padding: 10px;
+height: 100px;
+width: 250px;
+position: relative;
+top:120px;
+left: 9%;
+color: white;
+background-color: #232a34;
+border-radius: 10px;
+}   
+#diabetesForm{
+border: 2px solid #232a34;
+padding: 10px;
+height: 100px;
+width: 250px;
+position: relative;
+top:120px;
+left: 21%;
+color: white;
+background-color: #232a34;
+border-radius: 10px;
+}   
